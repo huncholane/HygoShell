@@ -1,4 +1,13 @@
-echo -e "\e[38;5;214mHygoShell is active.\e[0m\n"
+echo -e "\n\e[38;5;214mHygoShell is active.\e[0m\n"
+
+# Set the prompt
+if [ -n "$ZSH_VERSION" ]; then
+    PROMPT="%n@%m:%~"$'\n'"$ "
+fi
+if [ -n "$BASH_VERSION" ]; then
+    PS1="\u@\h:\w\n$ "
+fi
+# Set the prompt
 
 # HELP basic
 alias sz="source ~/.zshrc"
@@ -18,5 +27,5 @@ alias dce="docker compose exec -it"
 function gcom() {
     git add .
     git commit -m "$*"
-    git push
 }
+# HELP git
