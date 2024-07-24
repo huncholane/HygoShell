@@ -1,11 +1,11 @@
-echo -e "\n\e[38;5;214mHygoShell is active.\e[0m\n"
-
 # Set the prompt
 if [ -n "$ZSH_VERSION" ]; then
-    PROMPT="%n@%m:%~"$'\n'"$ "
+    echo -e "\n\e[38;5;214mHygoShell is active.\e[0m\n"
+    PROMPT="%F{214}%n@%m:%~"$'\n'"%f$ "
 fi
 if [ -n "$BASH_VERSION" ]; then
-    PS1="\u@\h:\w\n$ "
+    echo "\[\e[38;5;214m\]HygoShell is active.[\e[0m\]\$ "
+    PS1="\[\e[38;5;214m\]\u@\h:\w\n\[\e[0m\]\$ "
 fi
 # Set the prompt
 
