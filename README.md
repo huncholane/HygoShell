@@ -9,6 +9,10 @@ To use HygoShell, follow these steps:
     git clone https://github.com/huncholane/hygoshell ~/.hygo
     ```
 
-3. Once the cloning process is complete, you can start using HygoShell.
+3. Add the following to your shell config, i.e. .bashrc or .zshrc
+
+    ```
+    source ~/.hygo/.bashrc
+    ```
 
 Happy coding!
