@@ -33,4 +33,5 @@ function gpom() {
     git push
 }
 alias gp="git push"
+alias gc="git checkout"
 # HELP git
