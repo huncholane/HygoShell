@@ -28,4 +28,9 @@ function gcom() {
     git add .
     git commit -m "$*"
 }
+function gpom() {
+    gcom "$*"
+    git push
+}
+alias gp="git push"
 # HELP git
