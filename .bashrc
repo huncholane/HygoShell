@@ -9,6 +9,7 @@ alias ch="code ~/.hygo"
 alias vh="vim ~/.hygo"
 alias chs="code ~/.hygo/secret.sh"
 alias rhs="cat ~/.hygo/secret.sh"
+alias vhs="vim ~/.hygo/secret.sh"
 # HELP basic
 
 # HELP docker
