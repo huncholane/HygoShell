@@ -7,6 +7,7 @@ alias sb="source ~/.bashrc"
 alias c="clear"
 alias ch="code ~/.hygo"
 alias vh="vim ~/.hygo"
+alias chs="code ~/.hygo/secret.sh"
 # HELP basic
 
 # HELP docker
