@@ -14,7 +14,7 @@ alias vhs="vim ~/.hygo/secret.sh"
 
 # HELP docker
 alias dcd="docker compose down --remove-orphans"
-alias dcu="dcd && docker compose up -d"
+alias dcu="dcd && docker compose up --build -d"
 alias dcul="dcu && docker compose logs -f"
 alias dce="docker compose exec -it"
 alias dcl="docker compose logs -f"
