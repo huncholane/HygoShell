@@ -9,7 +9,7 @@ fi
 cd $CURRENT_DIR
 
 if [ -n "$ZSH_VERSION" ]; then
-    PROMPT="%F{214}%n@%m %~"$'\n'"%f$ "
+    PROMPT="%F{214}%n@%m %F{white}%~"$'\n'"%f$ "
 fi
 if [ -n "$BASH_VERSION" ]; then
     PS1="\[\e[38;5;214m\]\u@\h \w\n\$\[\e[0m\] "
