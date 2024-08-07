@@ -29,6 +29,7 @@ function gpom() {
     gcom "$*"
     git push
 }
+alias glog = "git log --oneline"
 alias gp="git push"
 alias gc="git checkout"
 # HELP git
