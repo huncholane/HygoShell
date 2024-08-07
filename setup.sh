@@ -9,11 +9,8 @@ fi
 cd $CURRENT_DIR
 
 # Function to get the current Git branch
-git_branch_str() {
-    git_branch=$(git branch 2>/dev/null | grep '*' | sed 's/* //')
-    if [ -n "$git_branch" ]; then
-        echo -e "($git_branch)"
-    fi
+get_git_branch() {
+    git branch 2>/dev/null | grep '*' | sed 's/* //'
 }
 
 # Set up zsh prompt
@@ -23,5 +20,5 @@ fi
 
 # Set up bash prompt
 if [ -n "$BASH_VERSION" ]; then
-    PS1="\[\e[38;5;214m\]\u@\h \w $(git_branch_str)\n\$\[\e[0m\] "
+    PS1='\[\e[38;5;214m\]\u@\h \w$(git_branch=$(get_git_branch); if [ -n "$git_branch" ]; then echo " \[\e[37m\]($git_branch\[\e[0m\])"; fi)\n\$\[\e[0m\] '
 fi
