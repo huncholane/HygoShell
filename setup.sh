@@ -22,3 +22,9 @@ fi
 if [ -n "$BASH_VERSION" ]; then
     PS1='\[\e[38;5;214m\]\u@\h \w$(git_branch=$(get_git_branch); if [ -n "$git_branch" ]; then echo " \[\e[37m\]($git_branch\[\e[0m\])"; fi)\n\$\[\e[0m\] '
 fi
+
+# Add source ./source.sh if it exists
+if [ -f ./source.sh ]; then
+    echo -e "\e[32mFound a source.sh in the current directory. Sourcing it.\e[0m"    
+    source ./source.sh
+fi
