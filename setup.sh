@@ -15,8 +15,7 @@ get_git_branch() {
 
 # Set up zsh prompt
 if [ -n "$ZSH_VERSION" ]; then
-    # PROMPT='%F{214}%n@%m %F{white}%~$(git_branch=$(get_git_branch); if [ -n "$git_branch" ]; then echo " (%git_branch)"; fi)'$'\n''%f$ '
-    PROMPT``
+	autoload -Uz vcs_info; precmd() { vcs_info }; PROMPT="%F{blue}%n@%m %F{yellow}%~ %F{cyan}${vcs_info_msg_0_}%f %# "
 fi
 
 # Set up bash prompt
