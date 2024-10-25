@@ -68,82 +68,47 @@ To use HygoShell, follow these steps:
 | Bright Cyan    | `brightcyan`    |
 | Bright White   | `brightwhite`   |
 
-### Extended ZSH Color Codes (Unnamed)
+### Curated ZSH Color Codes for a Wider Range
 
-| ZSH Code | RGB Value      | Description       |
-| -------- | -------------- | ----------------- |
-| `%F{16}` | `0, 0, 0`      | Very Dark Black   |
-| `%F{17}` | `0, 0, 95`     | Very Dark Blue    |
-| `%F{18}` | `0, 0, 135`    | Dark Blue         |
-| `%F{19}` | `0, 0, 175`    | Deep Blue         |
-| `%F{20}` | `0, 0, 215`    | Vivid Blue        |
-| `%F{21}` | `0, 0, 255`    | Bright Blue       |
-| `%F{22}` | `0, 95, 0`     | Dark Green        |
-| `%F{23}` | `0, 95, 95`    | Dark Cyan         |
-| `%F{24}` | `0, 95, 135`   | Teal              |
-| `%F{25}` | `0, 95, 175`   | Dark Aqua         |
-| `%F{26}` | `0, 95, 215`   | Medium Aqua       |
-| `%F{27}` | `0, 95, 255`   | Bright Aqua       |
-| `%F{28}` | `0, 135, 0`    | Green             |
-| `%F{29}` | `0, 135, 95`   | Soft Green-Cyan   |
-| `%F{30}` | `0, 135, 135`  | Medium Cyan       |
-| `%F{31}` | `0, 135, 175`  | Cool Cyan         |
-| `%F{32}` | `0, 135, 215`  | Light Cyan        |
-| `%F{33}` | `0, 135, 255`  | Bright Cyan       |
-| `%F{34}` | `0, 175, 0`    | Deep Green        |
-| `%F{35}` | `0, 175, 95`   | Greenish Cyan     |
-| `%F{36}` | `0, 175, 135`  | Medium Turquoise  |
-| `%F{37}` | `0, 175, 175`  | Bright Turquoise  |
-| `%F{38}` | `0, 175, 215`  | Soft Sky Blue     |
-| `%F{39}` | `0, 175, 255`  | Bright Sky Blue   |
-| `%F{40}` | `0, 215, 0`    | Vivid Green       |
-| `%F{41}` | `0, 215, 95`   | Bright Mint       |
-| `%F{42}` | `0, 215, 135`  | Mint Green        |
-| `%F{43}` | `0, 215, 175`  | Soft Turquoise    |
-| `%F{44}` | `0, 215, 215`  | Bright Turquoise  |
-| `%F{45}` | `0, 215, 255`  | Soft Cyan         |
-| `%F{46}` | `0, 255, 0`    | Pure Green        |
-| `%F{47}` | `0, 255, 95`   | Neon Mint         |
-| `%F{48}` | `0, 255, 135`  | Bright Seafoam    |
-| `%F{49}` | `0, 255, 175`  | Neon Aqua         |
-| `%F{50}` | `0, 255, 215`  | Bright Aqua       |
-| `%F{51}` | `0, 255, 255`  | Very Bright Cyan  |
-| `%F{52}` | `95, 0, 0`     | Dark Red          |
-| `%F{53}` | `95, 0, 95`    | Purple Red        |
-| `%F{54}` | `95, 0, 135`   | Plum              |
-| `%F{55}` | `95, 0, 175`   | Deep Purple       |
-| `%F{56}` | `95, 0, 215`   | Vivid Purple      |
-| `%F{57}` | `95, 0, 255`   | Neon Purple       |
-| `%F{58}` | `95, 95, 0`    | Dark Olive Green  |
-| `%F{59}` | `95, 95, 95`   | Dark Gray         |
-| `%F{60}` | `95, 95, 135`  | Slate Gray        |
-| `%F{61}` | `95, 95, 175`  | Soft Slate Blue   |
-| `%F{62}` | `95, 95, 215`  | Blue Gray         |
-| `%F{63}` | `95, 95, 255`  | Cool Gray         |
-| `%F{64}` | `95, 135, 0`   | Olive Green       |
-| `%F{65}` | `95, 135, 95`  | Light Olive Green |
-| `%F{66}` | `95, 135, 135` | Grayish Green     |
-| `%F{67}` | `95, 135, 175` | Light Blue-Gray   |
-| `%F{68}` | `95, 135, 215` | Soft Periwinkle   |
-| `%F{69}` | `95, 135, 255` | Lavender          |
-| `%F{70}` | `95, 175, 0`   | Chartreuse Green  |
-| `%F{71}` | `95, 175, 95`  | Soft Green        |
-| `%F{72}` | `95, 175, 135` | Sea Green         |
-| `%F{73}` | `95, 175, 175` | Light Teal        |
-| `%F{74}` | `95, 175, 215` | Sky Blue          |
-| `%F{75}` | `95, 175, 255` | Light Blue        |
-| `%F{76}` | `95, 215, 0`   | Spring Green      |
-| `%F{77}` | `95, 215, 95`  | Bright Lime       |
-| `%F{78}` | `95, 215, 135` | Soft Green        |
-| `%F{79}` | `95, 215, 175` | Light Mint        |
-| `%F{80}` | `95, 215, 215` | Light Aqua        |
-| `%F{81}` | `95, 215, 255` | Pale Cyan         |
-| `%F{82}` | `95, 255, 0`   | Neon Green        |
-| `%F{83}` | `95, 255, 95`  | Bright Green      |
-| `%F{84}` | `95, 255, 135` | Soft Mint Green   |
-| `%F{85}` | `95, 255, 175` | Pastel Mint       |
-| `%F{86}` | `95, 255, 215` | Soft Turquoise    |
-| `%F{87}` | `95, 255, 255` | Light Cyan        |
+| ZSH Code  | RGB Value       | Description        |
+| --------- | --------------- | ------------------ |
+| `%F{187}` | `215, 215, 175` | Beige              |
+| `%F{21}`  | `0, 0, 255`     | Blue               |
+| `%F{27}`  | `0, 95, 255`    | Blue (Bright)      |
+| `%F{19}`  | `0, 0, 175`     | Blue (Deep)        |
+| `%F{51}`  | `0, 255, 255`   | Cyan (Very Bright) |
+| `%F{30}`  | `0, 135, 135`   | Cyan (Medium)      |
+| `%F{154}` | `175, 215, 0`   | Chartreuse         |
+| `%F{180}` | `215, 175, 215` | Lavender           |
+| `%F{131}` | `175, 95, 135`  | Mauve              |
+| `%F{201}` | `255, 0, 255`   | Magenta (Bright)   |
+| `%F{47}`  | `0, 255, 95`    | Mint (Neon)        |
+| `%F{214}` | `255, 175, 0`   | Orange (Light)     |
+| `%F{202}` | `255, 95, 0`    | Orange             |
+| `%F{166}` | `215, 135, 0`   | Orange (Dark)      |
+| `%F{189}` | `215, 215, 255` | Off-White          |
+| `%F{93}`  | `135, 95, 255`  | Periwinkle         |
+| `%F{125}` | `135, 0, 95`    | Plum (Dark)        |
+| `%F{129}` | `175, 95, 255`  | Purple             |
+| `%F{164}` | `215, 0, 95`    | Rose               |
+| `%F{203}` | `255, 85, 85`   | Salmon             |
+| `%F{48}`  | `0, 255, 135`   | Seafoam (Bright)   |
+| `%F{39}`  | `0, 175, 255`   | Sky Blue (Bright)  |
+| `%F{132}` | `175, 0, 135`   | Violet (Deep)      |
+| `%F{231}` | `255, 255, 255` | White              |
+| `%F{46}`  | `0, 255, 0`     | Green (Bright)     |
+| `%F{34}`  | `0, 175, 0`     | Green (Dark)       |
+| `%F{240}` | `95, 95, 95`    | Gray (Dark)        |
+| `%F{245}` | `135, 135, 135` | Gray               |
+| `%F{250}` | `175, 175, 175` | Gray (Light)       |
+| `%F{102}` | `95, 135, 0`    | Olive              |
+| `%F{52}`  | `95, 0, 0`      | Red (Dark)         |
+| `%F{88}`  | `135, 0, 0`     | Red (Deep)         |
+| `%F{196}` | `255, 0, 0`     | Red (Bright)       |
+| `%F{220}` | `255, 215, 0`   | Yellow-Orange      |
+| `%F{226}` | `255, 255, 0`   | Yellow (Bright)    |
+| `%F{184}` | `215, 215, 0`   | Yellow (Soft)      |
+| `%F{16}`  | `0, 0, 0`       | Black (Very Dark)  |
 
 ### Example Prompts
 

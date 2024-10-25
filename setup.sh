@@ -13,7 +13,6 @@ get_git_branch() {
     git branch 2>/dev/null | grep '*' | sed 's/* //'
 }
 
-ZSH_ORANGE='%F{214}'`
 # Set up zsh prompt
 if [ -n "$ZSH_VERSION" ]; then
     # PROMPT='%F{214}%n@%m %F{white}%~$(git_branch=$(get_git_branch); if [ -n "$git_branch" ]; then echo " (%git_branch)"; fi)'$'\n''%f$ '
