@@ -13,10 +13,28 @@ get_git_branch() {
     git branch 2>/dev/null | grep '*' | sed 's/* //'
 }
 
+git_branch_str() {
+    git_branch=$(get_git_branch)
+    if [ -n "$git_branch" ]; then
+        echo "($git_branch)"
+    fi
+}
+
+update_prompt() {
+    local git_branch=$(get_git_branch)
+    if [ -n "$git_branch" ]; then
+        PROMPT="%F{214}%n@%m %F{white}%~ %F{51}($git_branch)$NEWLINE%F{214}%#%k%f "
+    else
+        PROMPT="%F{214}%n@%m %F{white}%~$NEWLINE%F{214}%#%k%f "
+    fi
+}
+
 # Set up zsh prompt
 if [ -n "$ZSH_VERSION" ]; then
-	NEWLINE=$'\n'
-    PROMPT="%F{214}%n@%m %F{white}%~ %F{51}($(get_git_branch))${NEWLINE}%F{214}%#%k%f "
+    NEWLINE=$'\n'
+    autoload -Uz add-zsh-hook
+    add-zsh-hook precmd update_prompt
+    update_prompt
 fi
 
 # Set up bash prompt
