@@ -33,3 +33,9 @@ alias glog="git log --oneline"
 alias gp="git push"
 alias gc="git checkout"
 # HELP git
+
+# Add source ./source.sh if it exists and this is not ~/.hygo/source.sh
+if [ -f "$(pwd)/source.sh" ] && [ "$(pwd)" != "$HOME/.hygo" ]; then
+    echo -e "\e[32mFound a source.sh in the current directory. Sourcing it.\e[0m"    
+    source "$(pwd)/source.sh" 
+fi
